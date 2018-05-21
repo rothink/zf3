@@ -1,0 +1,16 @@
+<h1>Olá, Rodrigo</h1>
+
+<?php $this->headTitle("Blog"); ?>
+
+<table class="table">
+    <tr>
+        <th>Post</th>
+        <th>Content</th>
+    </tr>
+    <?php foreach ($posts as $post) : ?>
+        <tr>
+            <td><?php echo $this->escapeHtml($post->title); ?></td>
+            <td></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
